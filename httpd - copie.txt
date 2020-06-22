@@ -1,0 +1,14 @@
+Alias /bitnami/ "/opt/lampp/apache2/htdocs/"
+Alias /bitnami "/opt/lampp/apache2/htdocs"
+
+<Directory "/opt/lampp/apache2/htdocs">
+    Options Indexes FollowSymLinks
+    AllowOverride All
+    Order allow,deny
+    Allow from all
+</Directory>
+Alias /ISCC “/Users/emmabastien/Downloads/ISCC-2020/Jour-01/Exo_01-2.txt”
+<Directory “/Users/emmabastien/Downloads/ISCC-2020/Jour-01/Exo_01-2.txt”>
+Options Indexes FollowSymLinks MultiViews ExecCGI AllowOverride All
+Require all granted
+</Directory>
